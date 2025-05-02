@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "7d0e73c3-76c2-4211-8bc3-d3aa4dc1b688",
+		"name": "DM110-billing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16202695"
+	},
+	"item": [
+		{
+			"name": "Get all billings",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/trabalho-web/api/billing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trabalho-web",
+						"api",
+						"billing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register billing",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"billCode\" : 1,\r\n\t\"description\" : \"Fatura teste.\",\r\n\t\"value\" : 26.18,\r\n\t\"expirationDate\" : \"2025-05-31T00:00:00\",\r\n\t\"paidDate\" : \"2025-05-02T19:19:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/trabalho-web/api/billing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trabalho-web",
+						"api",
+						"billing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get specific billing",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/trabalho-web/api/billing/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trabalho-web",
+						"api",
+						"billing",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update billing",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"billCode\" : 1,\r\n\t\"description\" : \"Fatura teste nova.\",\r\n\t\"value\" : 28.14,\r\n\t\"expirationDate\" : \"2025-05-31T00:00:00\",\r\n\t\"paidDate\" : \"2025-05-02T19:33:00\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/trabalho-web/api/billing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trabalho-web",
+						"api",
+						"billing"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete billing",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/trabalho-web/api/billing/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trabalho-web",
+						"api",
+						"billing",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
