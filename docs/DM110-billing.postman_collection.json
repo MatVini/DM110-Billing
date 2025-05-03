@@ -145,6 +145,30 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get all audits",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/trabalho-web/api/auditing",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"trabalho-web",
+						"api",
+						"auditing"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
